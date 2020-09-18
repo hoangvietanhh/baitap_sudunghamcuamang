@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let str='c';
+    let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for (let i=0; i < str.length; i++){
+        if(upper.indexOf(str[i]) !== -1)
+        {
+            result.push(str[i].toLowerCase());
+        }
+        else if(lower.indexOf(str[i]) !== -1)
+        {
+            result.push(str[i].toUpperCase());
+        }
+        else
+        {
+            result.push(str[i]);
+        }
+    }
+
+</script>
